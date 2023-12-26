@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:test_layout": "node dist/test_layout/server/server.mjs"
+    "serve:ssr:test_layout": "node dist/test_layout/server/server.mjs",
+    "git": "git add . && git commit -m 'c' && git push origin master "
   },
   "private": true,
   "dependencies": {

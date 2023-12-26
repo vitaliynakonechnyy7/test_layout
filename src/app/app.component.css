@@ -1,0 +1,31 @@
+.scroll-vertical-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    scroll-snap-type: y mandatory;
+    align-items: center;
+    overflow-y: auto;
+    gap: 1em;
+    order: 0;
+  }
+
+.main-content-container {
+    height: 100%;
+    width: 100%;
+    /* background: var(--background-color); */
+    box-shadow: 0 2px 2px var(--shadow-ng1), 0 0 2px var(--shadow-ng2);
+    transition: box-shadow 0.5s;
+    -webkit-font-smoothing: antialiased;
+    /* border-radius: var(--border-radius); */
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+    transition: 2s;
+    overflow: hidden;
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }

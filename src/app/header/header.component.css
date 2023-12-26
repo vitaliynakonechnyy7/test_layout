@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2vw;
+  background: greenyellow;
+}
+
+.logoClass {
+  height: 100%;
+  width: 100%;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+.icon {
+  font-size: 2em;
+  color: gray;
+  cursor: pointer;
+}
+
+.icon:hover {
+   opacity: .8;
+  }
