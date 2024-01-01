@@ -1,4 +1,18 @@
+<div class="hero-section" [style.backgroundImage]="'url(' + selectedBackgroundImage + ')'">
+  <div class="overlay">
+    <!-- <h3>{{ heroText }}</h3>
+    <h1>{{ heroTextMain }}</h1> -->
+    <app-title [topTitle]="heroText" [mainTitle]="heroTextMain" [borderColor]="borderColor"></app-title>
 
-<div class="hero-main">
-  hero-section works!
+    <button (click)="edit()" style="margin-bottom: 1em;">
+      {{ isEditing ? 'Close' : 'Edit' }}
+    </button>
+    <span *ngIf="isEditing">
+    <div class="thumbnail-container">
+      <img *ngFor="let image of backgroundImageOptions" [src]="image" (click)="changeBackground(image)">
+    </div>
+    <button (click)="editHeroSection()">Edit Hero Section</button>
+    <button (click)="editText()">Edit Text</button>
+  </span>
+</div>
 </div>

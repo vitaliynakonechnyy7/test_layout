@@ -1,3 +1,26 @@
-<div class="about-main" >
-  about works!
+<div class="about-section">
+  <!-- Block 1 -->
+  <div class="title-description">
+    <h3>WOT</h3>
+    <h1>Story about us</h1>
+  </div>
+
+  <!-- Block 2 -->
+  <div class="block">
+    <p class="gray-text">This is a small paragraph with about 50 words in the center and gray color.</p>
+  </div>
+
+  <!-- Block 3 -->
+  <div class="block imgBlog">
+    <img *ngFor="let entry of blogEntries" [src]="entry.image" alt="Blog Image">
+  </div>
+
+  <!-- Block 4 -->
+  <div class="achievement-section">
+    <div *ngFor="let number of achievementNumbers; let i = index" class="achievement-item">
+      <div class="number">{{ number }}</div>
+      <div class="title">{{ achievementTitles[i] }}</div>
+    </div>
+  </div>
 </div>
+

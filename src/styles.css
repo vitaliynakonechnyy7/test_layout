@@ -1,4 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
-    margin: 0;
+  margin: 0; /* Reset default margin */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h3 {
+  font-size: calc(2rem + 0.6vw);
+  /* margin-bottom: 20px; */
+  font-family: "Your Curled Capital Font", cursive; /* Replace with your actual font */
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: calc(3rem + 1.1vw);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  color: var(--sub-title-color);
+font-size: var(--font-size-desc-small);
+}
+
+:root {
+  --background-color: rgb(240 240 240);
+  --dark-mode-background: rgba(52, 53, 65);
+
+  --border-radius: 4px;
+
+  /* SQUARE BUTTON  */
+  --square-button-outline-color-dark: rgba(59, 59, 59, 0.823);
+  --square-button-outline-color-light: rgba(255, 255, 255, 0.512);
+
+  /* IMAGE-BACKGROUND DISCOUNT TITLE DESCRIPTION PRICE */
+  --image-background-dark: #00000032;
+  --image-background-light: #f8f8f8;
+
+  /* TITLE DESCRIPTION */
+  --title-color-dark: rgb(39, 40, 50);
+  --sub-title-color: #6c7073;
+  --description-color: #282830;
+
+  /* ICON */
+  --icon-color-light: #dfdfdf;
+  --icon-color-dark: rgb(77, 80, 81);
+
+  /* GLASS PLATFORM */
+  --glass-platform-color: rgba(0, 0, 0, 0.633);
+
+  /* FONT SIZE */
+  --font-size-title-large: calc(1.325rem + 1.1vw);
+  --font-size-desc-large: calc(0.9rem + 0.8vw);
+  --font-size-title-middle: calc(1rem + 1vw);
+  --font-size-desc-middle: calc(0.7rem + 0.6vw);
+  --font-size-title-small: calc(0.7rem + 0.6vw);
+  --font-size-desc-small: calc(0.5rem + 0.6vw);
+  --font-size-button: calc(0.7rem + 0.5vw);
+
+  /* HEADER */
+  --header-color: #444;
+
+  /* HEADER DIALOG*/
+  --header-dialog-color-dark: #00000029;
+  --header-dialog-color-light: rgb(240 240 240);
+
+  /* SIDENAV */
+  --sidenavTour-background-color-dark: #00000029; /*hsla(0, 0%, 100%, 0.04) #444; */
+  --sidenavTour-background-color-light: rgb(240 240 240);
 }

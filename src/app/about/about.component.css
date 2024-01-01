@@ -1,4 +1,49 @@
-.about-main {
-    height: 100vh;
-    background: rgb(205, 97, 50);
+.about-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 4vw;
+}
+
+.title-description {
+  width: 100%;
+  text-align: center;
+}
+
+.gray-text {
+  color: #888; /* Use your desired gray color */
+}
+
+.imgBlog {
+  height: 30vh;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* object-fit:contain; */
+  background-size:cover;
+}
+
+.achievement-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background: rgb(153, 253, 203);
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.number {
+  font-size: 2em;
+}
+
+.title {
+  font-size: 1em;
+  color: gray;
 }

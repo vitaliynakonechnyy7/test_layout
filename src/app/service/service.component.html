@@ -1,3 +1,21 @@
 <div class="service-main">
-  service works!
+  <div class="title-description">
+    <h3>We work with</h3>
+    <h1>Amazing service</h1>
+    <div class="border"></div>
+  </div>
+  
+  <div class="summary-component" *ngIf="visible">
+    <div class="summary-column">
+      <div *ngFor="let item of summary; let i = index;" class="summary-item">
+        <ng-container *ngIf="item.name">
+          <span class="material-symbols-outlined icon">{{ item.icon }}</span>
+          <div style="display: flex; flex-direction: column; gap: 1em;">
+            <span class="label-text" [style.font-size]="'1.3em'">{{ item.name }}</span>
+            <span class="label-text-data" [style.font-size]="'1em'">{{ item.data }}</span>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
 </div>
